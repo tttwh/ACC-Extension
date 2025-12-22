@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ACC</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body { width: 360px; margin: 0; padding: 12px; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+      .search { display: flex; gap: 8px; }
+      input[type="text"] { flex: 1; padding: 6px 8px; border: 1px solid #d4d4d8; border-radius: 8px; }
+      button { padding: 6px 10px; border: 1px solid #d4d4d8; border-radius: 8px; background: white; cursor: pointer; }
+      .result { padding: 8px; border: 1px solid #e5e7eb; border-radius: 8px; margin-top: 8px; }
+      .meta { color: #6b7280; font-size: 12px; margin-top: 4px; }
+      .empty { color: #9ca3af; text-align: center; margin-top: 12px; }
+    </style>
+  </head>
+  <body>
+    <div class="search">
+      <input id="kw" type="text" placeholder="输入关键词..." />
+      <button id="go">搜索</button>
+    </div>
+    <div id="list"></div>
+    <div style="margin-top:12px; text-align:right;">
+      <button id="open-dashboard" style="border:none; background:none; color:#2563eb; cursor:pointer;">打开仪表盘</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
+
+
+

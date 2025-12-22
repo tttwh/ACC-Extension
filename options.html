@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>ACC 设置 - 个人信息</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* 调整 options.html 的 body 样式，使其看起来像一个独立页面而不是侧边栏 */
+    body { 
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; 
+      padding: 0; 
+      margin: 0; 
+      background: #f4f4f5; /* 保持与侧边栏一致的背景色 */
+    }
+    .options-container {
+      width: 400px; /* 增加宽度，适应独立页面 */
+      margin: 20px auto;
+      padding: 20px;
+      background: #ffffff; /* 容器内部使用白色卡片 */
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .avatar-section { 
+      display: flex; 
+      align-items: center; 
+      margin-top: 10px; 
+    }
+    .avatar { 
+      width: 80px; 
+      height: 80px; 
+      object-fit: cover; 
+      border-radius: 50%; /* 改为圆形头像 */
+      border: 2px solid #ddd; 
+      margin-right: 15px;
+    }
+    label { 
+      display: block; 
+      margin-top: 15px; 
+      font-weight: 600;
+      color: #333;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 8px 12px;
+      margin-top: 5px;
+      border: 1px solid #d4d4d8;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    textarea { 
+      resize: vertical; 
+    }
+    #saveBtn {
+      padding: 8px 16px;
+      margin-top: 20px;
+      background: #007AFF; /* 蓝色按钮 */
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    #saveBtn:hover {
+      background: #0056b3;
+    }
+    #status { 
+      margin-left: 15px; 
+      color: #34C759; /* 绿色成功提示 */
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <div class="options-container">
+    <h2>个人信息设置</h2>
+    
+    <div class="avatar-section">
+      <img id="avatarPreview" class="avatar" src="" alt="头像预览" />
+      <div>
+        <label>更换头像</label>
+        <input id="avatarFile" type="file" accept="image/*" />
+      </div>
+    </div>
+    
+    <label>
+      姓名
+      <input id="name" type="text" placeholder="请输入您的姓名" />
+    </label>
+    
+    <label>
+      简介
+      <textarea id="bio" rows="3" placeholder="介绍一下您自己吧"></textarea>
+    </label>
+    
+    <div style="margin-top:20px;">
+      <button id="saveBtn">保存设置</button>
+      <span id="status"></span>
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+{
+  "manifest_version": 3,
+  "name": "AI Conversation Curator (ACC)",
+  "description": "选择性保存AI回答，进行本地摘要/标签和关键词检索的浏览器扩展（MVP）",
+  "version": "0.1.0",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "ACC",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://chatgpt.com/*",
+    "https://deepseek.com/*",
+    "https://*.deepseek.com/*",
+    "https://kimi.moonshot.cn/*",
+    "https://*.kimi.moonshot.cn/*",
+    "https://aistudio.google.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*",
+        "https://deepseek.com/*",
+        "https://*.deepseek.com/*",
+        "https://kimi.moonshot.cn/*",
+        "https://*.kimi.moonshot.cn/*",
+        "https://aistudio.google.com/*"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "sidebar.html",
+        "sidebar.js",
+        "popup.html",
+        "popup.js",
+        "styles.css",
+        "dashboard.html",
+        "dashboard.js"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
+
+
