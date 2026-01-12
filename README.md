@@ -6,6 +6,16 @@
   <b>Local-First Knowledge Management for AI Conversations</b>
   <br>
   <br>
+
+  <a href="https://www.bilibili.com/video/BV1vCrhBUEnq/" target="_blank">
+    <img src="docs/video_cover.png" alt="Watch Demo Video" width="600" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15);">
+  </a>
+  <br>
+  <a href="https://www.bilibili.com/video/BV1vCrhBUEnq/" target="_blank">
+    <b>🎥 Watch Demo Video / 观看功能演示 (Bilibili)</b>
+  </a>
+  <br>
+  <br>
 </div>
 
 ## 📖 Introduction
