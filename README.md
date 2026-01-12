@@ -1,7 +1,6 @@
 # ACC - AI Conversation Curator
 
 <div align="center">
-  <img src="icons/icon128.png" alt="ACC Logo" width="100" height="100">
   <br>
   <b>Local-First Knowledge Management for AI Conversations</b>
   <br>
@@ -59,13 +58,7 @@ It features a unique **"Smart Positioning"** system that can restore the exact s
 * **Styling**: CSS3 (Variables, Flexbox/Grid)
 * **Compatibility**: ChatGPT, DeepSeek, Kimi AI, Google AI Studio
 
-## 📸 Screenshots
 
-| Dashboard (Light) | Dashboard (Dark) |
-|:---:|:---:|
-| <img src="docs/screenshot_light.png" width="400"> | <img src="docs/screenshot_dark.png" width="400"> |
-
-*(Note: You can upload your screenshots to a `docs` folder and link them here)*
 
 ## 📄 License
 
